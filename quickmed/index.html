@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedLearn - Résumés médicaux</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/CSS/style.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./assets/images/logo.svg" alt="Logo">
+        <span>MedLearn</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="annee.html" class="active">Années</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+      <div class="search-icon">🔍</div>
+    </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Des résumés médicaux clairs et fiables pour vos études</h1>
+      <p>Accédez aux cours résumés, QCMs et ressources, organisés par année, semestre et module.
+         Révisez efficacement avec des contenus validés par des professionnels.</p>
+      <div class="hero-buttons">
+        <button class="btn-primary" onclick="window.location.href='annee.html'">Explorer les années</button>
+        <button class="btn-secondary" onclick="window.location.href='#modules'">Voir les ressources</button>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="./assets/images/logo.svg" alt="" class="placeholder">
+    </div>
+  </section>
+
+  <!-- Ressources -->
+  <section class="modules" id="modules">
+    <h2>Ressources disponibles</h2>
+    <p>Accédez à tous les outils nécessaires pour réussir vos études</p>
+    <div class="module-grid">
+      <div class="module-card">
+        <div class="icon">📝</div>
+        <h3>Résumés de cours</h3>
+        <p>Cours résumés et structurés pour une révision efficace. Contenu validé et organisé par modules.</p>
+        <span>Tous niveaux</span> · <span>Format PDF</span> · <span>Téléchargeable</span>
+      </div>
+      <div class="module-card">
+        <div class="icon">✅</div>
+        <h3>QCMs corrigés</h3>
+        <p>Questions à choix multiples avec corrections détaillées pour tester vos connaissances.</p>
+        <span>Tous modules</span> · <span>Corrections</span> · <span>Explications</span>
+      </div>
+      <div class="module-card">
+        <div class="icon">📚</div>
+        <h3>Fiches de révision</h3>
+        <p>Fiches synthétiques pour mémoriser l'essentiel rapidement avant les examens.</p>
+        <span>Format compact</span> · <span>Synthèses</span> · <span>Mémorisation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Témoignages -->
+  <section class="testimonials">
+    <h2>Ce que disent nos étudiants</h2>
+    <p>Témoignages d'étudiants qui ont réussi avec MedLearn</p>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p>"Les résumés sont parfaitement structurés et m'ont aidé à réussir mes partiels. La qualité du contenu est exceptionnelle."</p>
+        <span>⭐️⭐️⭐️⭐️⭐️</span>
+        <h4>Marie Dubois</h4>
+        <small>4ème année</small>
+      </div>
+      <div class="testimonial-card">
+        <p>"Les QCMs avec corrections détaillées m'ont permis de comprendre mes erreurs. Un outil indispensable pour les révisions."</p>
+        <span>⭐️⭐️⭐️⭐️⭐️</span>
+        <h4>Thomas Martin</h4>
+        <small>3ème année</small>
+      </div>
+      <div class="testimonial-card">
+        <p>"L'organisation par modules et chapitres facilite énormément les révisions. Je recommande à tous mes collègues étudiants."</p>
+        <span>⭐️⭐️⭐️⭐️⭐️</span>
+        <h4>Sarah Leblanc</h4>
+        <small>5ème année</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to action -->
+  <section class="cta">
+    <h2>Prêt à commencer vos révisions ?</h2>
+    <p>Accédez dès maintenant à tous nos résumés et QCMs pour réussir vos études de médecine</p>
+    <div class="cta-buttons">
+      <button class="btn-primary" onclick="window.location.href='annee.html'">Commencer maintenant</button>
+      <button class="btn-secondary" onclick="window.location.href='#modules'">Découvrir les ressources</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-top">
+      <div class="footer-logo">LOGO<br>MedLearn</div>
+      <p>Plateforme éducative pour étudiants en médecine – résumés et QCMs de qualité pour votre réussite académique.</p>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="annee.html">Années d'étude</a></li>
+          <li><a href="#modules">Ressources</a></li>
+          <li><a href="./index.html">À propos</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Modules</h4>
+        <ul>
+          <li>Anatomie</li>
+          <li>Biochimie</li>
+          <li>Biophysique</li>
+          <li>Cytologie</li>
+          <li>Histologie</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <form id="contactForm">
+          <input type="text" name="name" placeholder="Nom" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 MedLearn – Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    function showYear(yearId) {
+      const allYears = document.querySelectorAll('.annee-content');
+      const allButtons = document.querySelectorAll('.annee-buttons button');
+      
+      allYears.forEach(year => year.classList.remove('active'));
+      allButtons.forEach(btn => {
+        btn.classList.remove('btn-primary');
+        btn.classList.add('btn-secondary');
+      });
+  
+      // Show selected year
+      document.getElementById(yearId).classList.add('active');
+      event.target.classList.add('btn-primary');
+      event.target.classList.remove('btn-secondary');
+    }
+  
+    // Navbar active link detection (runs once on load)
+    document.addEventListener("DOMContentLoaded", () => {
+      const currentPage = window.location.pathname.split("/").pop();
+      const links = document.querySelectorAll(".nav-links a");
+  
+      links.forEach(link => {
+        const href = link.getAttribute("href");
+        if (href === currentPage) {
+          link.classList.add("active");
+        }
+      });
+
+      // Contact form handling
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          const formData = new FormData(this);
+          const name = formData.get('name');
+          const email = formData.get('email');
+          const message = formData.get('message');
+          
+          // Create mailto link
+          const mailtoLink = `mailto:contact@medlearn.com?subject=Contact de ${encodeURIComponent(name)}&body=${encodeURIComponent('De: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message)}`;
+          
+          // Open email client
+          window.location.href = mailtoLink;
+          
+          // Reset form
+          this.reset();
+          
+          // Show confirmation
+          alert('Votre client email va s\'ouvrir pour envoyer le message.');
+        });
+      }
+    });
+  </script>
+  
+</body>
+</html>
